@@ -29,7 +29,7 @@ function writePassword() {
 function generatePassword() {
   var password = "";
   for(var i = 0; i < characterLength; i++) {
-    var randomLetter = Math.floor(Math.random() * choiceArr.length);
+    var randomIndex = Math.floor(Math.random() * choiceArr.length);
     password = password + choiceArr[randomIndex];
   }
   return password;
